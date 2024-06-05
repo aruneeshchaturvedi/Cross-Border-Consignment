@@ -1,0 +1,68 @@
+Http methods & Data processing :-
+
+base url : http://localhost:3000/admin/manageusers/
+
+---------------------------------------------------------------
+
+method POST : used to send request & to add content in resource. This method is used to generate save (insert) api i.e those api used to save data in resource
+
+It manages data internally hence secure to transfer data
+
+method : POST
+
+URL+data : data will be managed internally using request body
+
+eg url : http://example.com/
+
+http://localhost:3000/admin/manageusers/
+
+Note : to fetch request body params body parsing is used
+
+--------------------------------------------------
+
+method GET : used to send request & to bring response content. This method is used to generate fetch api i.e those api used to fetch resource data
+
+method : GET
+
+URL+data : data will be managed by using query string
+
+eg url : http://example.com/?p1=v1&p2=v2.....
+
+http://localhost:3000/admin/manageusers/?username=admin@gmail.com&password=admin123
+
+Note : 
+
+-> to fetch url params url parsing is used
+-> Another way to attach record in url string is "url params" , this is applicable to all methods (GET , POST , PUT...)
+
+eg url : http://example.com/p_v1/p_v2.....
+
+http://localhost:3000/admin/manageusers/admin@gmail.com/admin123
+
+--------------------------------------------------------------
+
+Note : Apart from methods , url params can be used to attach data with any url request
+
+URL+data : data will be managed by using url params
+
+eg url : http://example.com/param_value1/param_value2......
+
+---------------------------------------------------------------
+
+method DELETE : used to send request & to remove content in resource. This method is used to generate delete api i.e those api used to delete data in resource
+
+URL+data : data will be managed internally using request body
+
+---------------------------------------------------------------
+
+method PATCH : used to send request & to update content in resource. This method is used to generate update api i.e those api used to update data in resource
+
+URL+data : data will be managed internally using request body
+
+
+differenece url resource : 
+
+* https://www.geeksforgeeks.org/diffrence-between-put-and-post-http-requests/
+
+* https://www.geeksforgeeks.org/difference-between-put-and-patch-request/
+     
